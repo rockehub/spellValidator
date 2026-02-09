@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spell Validator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Spell Validator</h1>
+    <p>Validação de combinações de feitiços e conflitos com base no Excel.</p>
+  </header>
+
+  <section id="summary" class="cards"></section>
+
+  <section class="panel">
+    <h2>Combinações</h2>
+    <div class="filters">
+      <label><input type="checkbox" id="onlyConflicts" /> Mostrar apenas combinações com conflito</label>
+      <input id="searchCombo" placeholder="Buscar por elemento (ex: Fire, Water, Aether)" />
+    </div>
+    <div class="table-wrap">
+      <table id="comboTable">
+        <thead>
+          <tr>
+            <th>Combinação</th>
+            <th>Ofensivos Ativos</th>
+            <th>Protetivos Ativos</th>
+            <th>Utilitários Ativos</th>
+            <th>Conflitos</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Fenômenos inacessíveis</h2>
+    <ul id="unreachable"></ul>
+  </section>
+
+  <section class="panel">
+    <h2>Dados do Excel</h2>
+    <div class="tabs">
+      <button data-tab="elements">Elementos</button>
+      <button data-tab="offensive">Offensive</button>
+      <button data-tab="protective">Protective</button>
+      <button data-tab="utility">Utility</button>
+    </div>
+    <div id="dataset"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
