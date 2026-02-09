@@ -1,12 +1,12 @@
 {
   "summary": {
     "elements": 8,
-    "offensive": 74,
+    "offensive": 63,
     "protective": 16,
     "utility": 16,
     "total_combinations": 255,
-    "conflicted_combinations": 101,
-    "unreachable_phenomena": 18
+    "conflicted_combinations": 0,
+    "unreachable_phenomena": 0
   },
   "elements": [
     {
@@ -328,108 +328,6 @@
       "Combo Esperado": "Reality",
       "Gameplay": "Projétil exótico. Ignora % armor.",
       "VFX Sugestão": "Esfera roxa/negra distorcida"
-    },
-    {
-      "RowName": "Inferno",
-      "PhenomenonID": "OFF_Inferno",
-      "DisplayName": "Inferno",
-      "Priority": 15,
-      "RequiredTier": "Default",
-      "DeliveryShape": "AoE",
-      "Req_Heat": 1.8,
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Fire+Fire",
-      "Gameplay": "AoE de fogo. Área grande, dano sustentado.",
-      "VFX Sugestão": "Explosão de chamas em círculo"
-    },
-    {
-      "RowName": "Cyclone",
-      "PhenomenonID": "OFF_Cyclone",
-      "DisplayName": "Ciclone",
-      "Priority": 15,
-      "RequiredTier": "Default",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": 1.8,
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Wind+Wind",
-      "Gameplay": "Vórtice que puxa inimigos. CC + dano.",
-      "VFX Sugestão": "Tornado miniatura"
-    },
-    {
-      "RowName": "Deluge",
-      "PhenomenonID": "OFF_Deluge",
-      "DisplayName": "Dilúvio",
-      "Priority": 15,
-      "RequiredTier": "Default",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": "",
-      "Req_Humidity": 1.8,
-      "Req_Density": "",
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Water+Water",
-      "Gameplay": "Chuva na área. DoT + slow persistente.",
-      "VFX Sugestão": "Nuvem escura com chuva"
-    },
-    {
-      "RowName": "Quake",
-      "PhenomenonID": "OFF_Quake",
-      "DisplayName": "Tremor",
-      "Priority": 15,
-      "RequiredTier": "Default",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": 1.8,
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Earth+Earth",
-      "Gameplay": "Terremoto. Stun em área + dano.",
-      "VFX Sugestão": "Rachadura no chão"
-    },
-    {
-      "RowName": "StormBolt",
-      "PhenomenonID": "OFF_StormBolt",
-      "DisplayName": "Trovão",
-      "Priority": 15,
-      "RequiredTier": "Default",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": 1.8,
-      "Req_Distortion": "",
-      "Combo Esperado": "Lightning+Lightning",
-      "Gameplay": "Raio do céu. AoE compacta, dano alto + stun.",
-      "VFX Sugestão": "Relâmpago vertical"
-    },
-    {
-      "RowName": "Rift",
-      "PhenomenonID": "OFF_Rift",
-      "DisplayName": "Fissura Dimensional",
-      "Priority": 15,
-      "RequiredTier": "Default",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": "",
-      "Req_Distortion": 1.8,
-      "Combo Esperado": "Reality+Reality",
-      "Gameplay": "Rasga o espaço. Dano + reduz defesas.",
-      "VFX Sugestão": "Rachadura roxa instável"
     },
     {
       "RowName": "Explosion",
@@ -1027,125 +925,6 @@
       "VFX Sugestão": "Correntes de energia no chão"
     },
     {
-      "RowName": "Inferno_Ult",
-      "PhenomenonID": "OFF_Inferno_Ult",
-      "DisplayName": "Inferno Supremo",
-      "Priority": 40,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "AoE",
-      "Req_Heat": 2.5,
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Fire×3",
-      "Gameplay": "Área 50% maior. Trail de fogo por 3s.",
-      "VFX Sugestão": "Mar de chamas expandindo"
-    },
-    {
-      "RowName": "Volcano_Ult",
-      "PhenomenonID": "OFF_Volcano_Ult",
-      "DisplayName": "Vulcão",
-      "Priority": 41,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "AoE",
-      "Req_Heat": 1.5,
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": 0.8,
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Fire×2+Earth",
-      "Gameplay": "Pool que CRESCE por 5s. Centro faz mais dano.",
-      "VFX Sugestão": "Caldeira de lava expandindo"
-    },
-    {
-      "RowName": "Pyroclasm_Ult",
-      "PhenomenonID": "OFF_Pyroclasm_Ult",
-      "DisplayName": "Cataclisma",
-      "Priority": 42,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "AoE",
-      "Req_Heat": 1.2,
-      "Req_Pressure": 0.8,
-      "Req_Humidity": "",
-      "Req_Density": 0.8,
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Fire+Fire+Wind+Earth",
-      "Gameplay": "Rochas em 3 ondas. Cada onda empurra mais.",
-      "VFX Sugestão": "Chuva de meteoros"
-    },
-    {
-      "RowName": "Plasma_Ult",
-      "PhenomenonID": "OFF_Plasma_Ult",
-      "DisplayName": "Coluna de Plasma",
-      "Priority": 41,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "Beam",
-      "Req_Heat": 0.8,
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": 1.5,
-      "Req_Distortion": "",
-      "Combo Esperado": "Lightning×2+Fire",
-      "Gameplay": "Perfura terreno. Ignora cobertura. +15% crit.",
-      "VFX Sugestão": "Coluna branca incandescente"
-    },
-    {
-      "RowName": "ChainLightning_Ult",
-      "PhenomenonID": "OFF_ChainLightning_Ult",
-      "DisplayName": "Tempestade Arcana",
-      "Priority": 42,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "Beam",
-      "Req_Heat": "",
-      "Req_Pressure": 0.8,
-      "Req_Humidity": "",
-      "Req_Density": "",
-      "Req_Conductivity": 1.5,
-      "Req_Distortion": "",
-      "Combo Esperado": "Lightning×2+Wind",
-      "Gameplay": "Pula 5 alvos. Dano não diminui por salto.",
-      "VFX Sugestão": "Teia de raios"
-    },
-    {
-      "RowName": "Blizzard_Ult",
-      "PhenomenonID": "OFF_Blizzard_Ult",
-      "DisplayName": "Era Glacial",
-      "Priority": 41,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": 0.8,
-      "Req_Humidity": 1.5,
-      "Req_Density": "",
-      "Req_Conductivity": "",
-      "Req_Distortion": "",
-      "Combo Esperado": "Water×2+Wind",
-      "Gameplay": "Freeze garantido. Área cresce ao longo de 4s.",
-      "VFX Sugestão": "Expansão de gelo cristalino"
-    },
-    {
-      "RowName": "Petrify_Ult",
-      "PhenomenonID": "OFF_Petrify_Ult",
-      "DisplayName": "Medusa",
-      "Priority": 41,
-      "RequiredTier": "Ultimate",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": 1.2,
-      "Req_Conductivity": "",
-      "Req_Distortion": 1.2,
-      "Combo Esperado": "Earth×2+Reality / Earth+Reality×2",
-      "Gameplay": "Cone: petrifica múltiplos. Explodem ao tomar dano.",
-      "VFX Sugestão": "Onda cinza petrificante"
-    },
-    {
       "RowName": "PrimordialTempest",
       "PhenomenonID": "OFF_PrimordialTempest",
       "DisplayName": "Tempestade Primordial",
@@ -1401,89 +1180,123 @@
       "VFX Sugestão": "Esfera negra com anel de acreção"
     },
     {
-      "RowName": "Supernova",
-      "PhenomenonID": "OFF_Supernova",
-      "DisplayName": "Supernova",
-      "Priority": 55,
+      "RowName": "PrimalApocalypse",
+      "PhenomenonID": "OFF_PrimalApocalypse",
+      "DisplayName": "Apocalipse Primordial",
+      "Priority": 60,
       "RequiredTier": "Supreme",
       "DeliveryShape": "AoE",
-      "Req_Heat": 2,
+      "Req_Heat": 0.8,
       "Req_Pressure": 0.8,
-      "Req_Humidity": "",
-      "Req_Density": "",
+      "Req_Humidity": 0.8,
+      "Req_Density": 0.8,
       "Req_Conductivity": 0.8,
       "Req_Distortion": "",
-      "Combo Esperado": "Fire×2+Wind+Lightning",
-      "Gameplay": "Explosão solar. AoE massiva + Burn + Blind.",
-      "VFX Sugestão": "Explosão branca ofuscante"
+      "Combo Esperado": "Fire, Wind, Water, Earth, Lightning",
+      "Gameplay": "Convergência dos cinco elementos fundamentais. Devastação absoluta em área.",
+      "VFX Sugestão": "Explosão multicolorida com ondas de choque"
     },
     {
-      "RowName": "WorldRend",
-      "PhenomenonID": "OFF_WorldRend",
-      "DisplayName": "Ruptura do Mundo",
-      "Priority": 55,
+      "RowName": "CosmicErosion",
+      "PhenomenonID": "OFF_CosmicErosion",
+      "DisplayName": "Erosão Cósmica",
+      "Priority": 60,
       "RequiredTier": "Supreme",
       "DeliveryShape": "AoE",
-      "Req_Heat": "",
+      "Req_Heat": 0.8,
       "Req_Pressure": 0.8,
-      "Req_Humidity": "",
+      "Req_Humidity": 0.8,
       "Req_Density": 0.8,
       "Req_Conductivity": "",
-      "Req_Distortion": 1.5,
-      "Combo Esperado": "Reality×2+Wind+Earth",
-      "Gameplay": "Rasga realidade. Flutuam 2s → caem com dano.",
-      "VFX Sugestão": "Fissura dimensional massiva"
+      "Req_Distortion": 0.8,
+      "Combo Esperado": "Fire, Wind, Water, Earth, Reality",
+      "Gameplay": "A realidade se dissolve sob pressão elemental massiva. Dano contínuo.",
+      "VFX Sugestão": "Fissuras de luz no chão com partículas de todos os elementos"
     },
     {
-      "RowName": "NovaBorealis",
-      "PhenomenonID": "OFF_NovaBorealis",
-      "DisplayName": "Aurora Devastadora",
-      "Priority": 55,
+      "RowName": "EtherealTempest",
+      "PhenomenonID": "OFF_EtherealTempest",
+      "DisplayName": "Tempestade Etérea",
+      "Priority": 60,
       "RequiredTier": "Supreme",
       "DeliveryShape": "AoE",
-      "Req_Heat": "",
+      "Req_Heat": 0.8,
       "Req_Pressure": 0.8,
-      "Req_Humidity": 1.5,
-      "Req_Density": "",
-      "Req_Conductivity": 0.8,
-      "Req_Distortion": "",
-      "Combo Esperado": "Water×2+Wind+Lightning",
-      "Gameplay": "Aurora boreal de gelo. Freeze em onda + chain stun.",
-      "VFX Sugestão": "Luzes no céu que descem em cascata"
-    },
-    {
-      "RowName": "SolarForge",
-      "PhenomenonID": "OFF_SolarForge",
-      "DisplayName": "Forja Solar",
-      "Priority": 55,
-      "RequiredTier": "Supreme",
-      "DeliveryShape": "Beam",
-      "Req_Heat": 2,
-      "Req_Pressure": "",
-      "Req_Humidity": "",
-      "Req_Density": 0.8,
-      "Req_Conductivity": 0.8,
-      "Req_Distortion": "",
-      "Combo Esperado": "Fire×2+Earth+Lightning",
-      "Gameplay": "Raio de estrela. Perfura tudo, dano máximo.",
-      "VFX Sugestão": "Feixe dourado destruidor"
-    },
-    {
-      "RowName": "VoidSingularity",
-      "PhenomenonID": "OFF_VoidSingularity",
-      "DisplayName": "Singularidade Void",
-      "Priority": 55,
-      "RequiredTier": "Supreme",
-      "DeliveryShape": "AoE",
-      "Req_Heat": "",
-      "Req_Pressure": "",
       "Req_Humidity": 0.8,
       "Req_Density": "",
       "Req_Conductivity": 0.8,
-      "Req_Distortion": 1.5,
-      "Combo Esperado": "Reality×2+Lightning+Water",
-      "Gameplay": "Buraco negro real. Puxa tudo por 3s, depois colapsa.",
-      "VFX Sugestão": "Ponto negro com disco de acreção"
+      "Req_Distortion": 0.8,
+      "Combo Esperado": "Fire, Wind, Water, Lightning, Reality",
+      "Gameplay": "Tempestade de energia pura sem ancoragem física. Caos etéreo.",
+      "VFX Sugestão": "Vórtice translúcido com relâmpagos e distorção"
+    },
+    {
+      "RowName": "PlanetarySunder",
+      "PhenomenonID": "OFF_PlanetarySunder",
+      "DisplayName": "Fragmentação Planetária",
+      "Priority": 60,
+      "RequiredTier": "Supreme",
+      "DeliveryShape": "AoE",
+      "Req_Heat": 0.8,
+      "Req_Pressure": 0.8,
+      "Req_Humidity": "",
+      "Req_Density": 0.8,
+      "Req_Conductivity": 0.8,
+      "Req_Distortion": 0.8,
+      "Combo Esperado": "Fire, Wind, Earth, Lightning, Reality",
+      "Gameplay": "Fratura sísmica amplificada por todas as forças destrutivas.",
+      "VFX Sugestão": "Chão rachando com magma, raios e distorções dimensionais"
+    },
+    {
+      "RowName": "ChaosTide",
+      "PhenomenonID": "OFF_ChaosTide",
+      "DisplayName": "Maré do Caos",
+      "Priority": 60,
+      "RequiredTier": "Supreme",
+      "DeliveryShape": "AoE",
+      "Req_Heat": 0.8,
+      "Req_Pressure": "",
+      "Req_Humidity": 0.8,
+      "Req_Density": 0.8,
+      "Req_Conductivity": 0.8,
+      "Req_Distortion": 0.8,
+      "Combo Esperado": "Fire, Water, Earth, Lightning, Reality",
+      "Gameplay": "Onda avassaladora que distorce matéria e energia.",
+      "VFX Sugestão": "Tsunami de lava eletrificada com distorção dimensional"
+    },
+    {
+      "RowName": "GlacialObliteration",
+      "PhenomenonID": "OFF_GlacialObliteration",
+      "DisplayName": "Obliteração Glacial",
+      "Priority": 60,
+      "RequiredTier": "Supreme",
+      "DeliveryShape": "AoE",
+      "Req_Heat": "",
+      "Req_Pressure": 0.8,
+      "Req_Humidity": 0.8,
+      "Req_Density": 0.8,
+      "Req_Conductivity": 0.8,
+      "Req_Distortion": 0.8,
+      "Combo Esperado": "Wind, Water, Earth, Lightning, Reality",
+      "Gameplay": "Aniquilação gelada absoluta. Tudo congela e se desfaz.",
+      "VFX Sugestão": "Onda de gelo cristalino com relâmpagos e fissuras dimensionais"
+    },
+    {
+      "RowName": "BigBang",
+      "PhenomenonID": "OFF_BigBang",
+      "DisplayName": "Big Bang",
+      "Priority": 70,
+      "RequiredTier": "Ultimate",
+      "DeliveryShape": "AoE",
+      "Req_Heat": 0.8,
+      "Req_Pressure": 0.8,
+      "Req_Humidity": 0.8,
+      "Req_Density": 0.8,
+      "Req_Conductivity": 0.8,
+      "Req_Distortion": 0.8,
+      "Combo Esperado": "Fire, Wind, Water, Earth, Lightning, Reality",
+      "Gameplay": "A convergência suprema de todas as forças. O feitiço definitivo.",
+      "VFX Sugestão": "Explosão esférica com todas as cores elementais expandindo"
     }
   ],
   "protective": [
@@ -1501,7 +1314,7 @@
       "RowName": "FireShield",
       "PhenomenonID": "PROT_FireShield",
       "DisplayName": "Escudo Flamejante",
-      "Priority": 10,
+      "Priority": 11,
       "RequiredTier": "Default",
       "RequiredElements": "Protection, Fire",
       "Gameplay": "Barreira retaliadora.",
@@ -1511,7 +1324,7 @@
       "RowName": "WindBarrier",
       "PhenomenonID": "PROT_WindBarrier",
       "DisplayName": "Barreira de Vento",
-      "Priority": 10,
+      "Priority": 12,
       "RequiredTier": "Default",
       "RequiredElements": "Protection, Wind",
       "Gameplay": "Desvio de projéteis.",
@@ -1521,7 +1334,7 @@
       "RowName": "WaterHeal",
       "PhenomenonID": "PROT_WaterHeal",
       "DisplayName": "Cura das Marés",
-      "Priority": 10,
+      "Priority": 13,
       "RequiredTier": "Default",
       "RequiredElements": "Protection, Water",
       "Gameplay": "Regeneração contínua.",
@@ -1531,7 +1344,7 @@
       "RowName": "StoneArmor",
       "PhenomenonID": "PROT_StoneArmor",
       "DisplayName": "Armadura Pétrea",
-      "Priority": 10,
+      "Priority": 14,
       "RequiredTier": "Default",
       "RequiredElements": "Protection, Earth",
       "Gameplay": "Absorção massiva.",
@@ -1541,7 +1354,7 @@
       "RowName": "StaticField",
       "PhenomenonID": "PROT_StaticField",
       "DisplayName": "Campo Estático",
-      "Priority": 10,
+      "Priority": 15,
       "RequiredTier": "Default",
       "RequiredElements": "Protection, Lightning",
       "Gameplay": "Escudo reativo.",
@@ -1551,7 +1364,7 @@
       "RowName": "PhaseShift",
       "PhenomenonID": "PROT_PhaseShift",
       "DisplayName": "Deslocamento de Fase",
-      "Priority": 10,
+      "Priority": 16,
       "RequiredTier": "Default",
       "RequiredElements": "Protection, Reality",
       "Gameplay": "Intangibilidade parcial.",
@@ -1561,7 +1374,7 @@
       "RowName": "FrostArmor",
       "PhenomenonID": "PROT_FrostArmor",
       "DisplayName": "Armadura de Gelo",
-      "Priority": 20,
+      "Priority": 21,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Protection, Water, Wind",
       "Gameplay": "+Def + slow melee attackers.",
@@ -1571,7 +1384,7 @@
       "RowName": "MoltenShell",
       "PhenomenonID": "PROT_MoltenShell",
       "DisplayName": "Casca de Magma",
-      "Priority": 20,
+      "Priority": 22,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Protection, Fire, Earth",
       "Gameplay": "Absorve → explode ao quebrar.",
@@ -1581,7 +1394,7 @@
       "RowName": "StormWard",
       "PhenomenonID": "PROT_StormWard",
       "DisplayName": "Proteção da Tempestade",
-      "Priority": 20,
+      "Priority": 23,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Protection, Lightning, Wind",
       "Gameplay": "+Def + aura dmg 3m.",
@@ -1591,7 +1404,7 @@
       "RowName": "Sanctuary",
       "PhenomenonID": "PROT_Sanctuary",
       "DisplayName": "Santuário",
-      "Priority": 20,
+      "Priority": 24,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Protection, Water, Earth",
       "Gameplay": "Zona de cura aliada.",
@@ -1601,7 +1414,7 @@
       "RowName": "VoidCloak",
       "PhenomenonID": "PROT_VoidCloak",
       "DisplayName": "Manto do Vazio",
-      "Priority": 20,
+      "Priority": 25,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Protection, Reality, Wind",
       "Gameplay": "Semi-invisível.",
@@ -1611,7 +1424,7 @@
       "RowName": "ArcaneBarrier",
       "PhenomenonID": "PROT_ArcaneBarrier",
       "DisplayName": "Barreira Arcana",
-      "Priority": 20,
+      "Priority": 26,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Protection, Reality, Lightning",
       "Gameplay": "Reflete 40% magic dmg.",
@@ -1621,7 +1434,7 @@
       "RowName": "Invulnerability",
       "PhenomenonID": "PROT_Invulnerability",
       "DisplayName": "Égide Absoluta",
-      "Priority": 30,
+      "Priority": 31,
       "RequiredTier": "Supreme",
       "RequiredElements": "Protection, Earth, Fire, Water",
       "Gameplay": "Invulnerável 2s.",
@@ -1631,7 +1444,7 @@
       "RowName": "Resurrection",
       "PhenomenonID": "PROT_Resurrection",
       "DisplayName": "Fênix",
-      "Priority": 30,
+      "Priority": 32,
       "RequiredTier": "Supreme",
       "RequiredElements": "Protection, Fire, Reality, Lightning",
       "Gameplay": "Resurrect ao morrer.",
@@ -1641,7 +1454,7 @@
       "RowName": "TimeLoop",
       "PhenomenonID": "PROT_TimeLoop",
       "DisplayName": "Ciclo Temporal",
-      "Priority": 30,
+      "Priority": 33,
       "RequiredTier": "Supreme",
       "RequiredElements": "Protection, Reality, Wind, Water",
       "Gameplay": "Salva estado → volta após 5s.",
@@ -1663,7 +1476,7 @@
       "RowName": "Haste",
       "PhenomenonID": "UTIL_Haste",
       "DisplayName": "Aceleração",
-      "Priority": 10,
+      "Priority": 11,
       "RequiredTier": "Default",
       "RequiredElements": "Aether, Wind",
       "Gameplay": "Buff movespeed + atk speed.",
@@ -1673,7 +1486,7 @@
       "RowName": "Purify",
       "PhenomenonID": "UTIL_Purify",
       "DisplayName": "Purificação",
-      "Priority": 10,
+      "Priority": 12,
       "RequiredTier": "Default",
       "RequiredElements": "Aether, Water",
       "Gameplay": "Remove debuffs. Cleanse.",
@@ -1683,7 +1496,7 @@
       "RowName": "Fortify",
       "PhenomenonID": "UTIL_Fortify",
       "DisplayName": "Fortificação",
-      "Priority": 10,
+      "Priority": 13,
       "RequiredTier": "Default",
       "RequiredElements": "Aether, Earth",
       "Gameplay": "Buff Defense caster+aliados.",
@@ -1693,7 +1506,7 @@
       "RowName": "Ignite",
       "PhenomenonID": "UTIL_Ignite",
       "DisplayName": "Empoderamento Ígneo",
-      "Priority": 10,
+      "Priority": 14,
       "RequiredTier": "Default",
       "RequiredElements": "Aether, Fire",
       "Gameplay": "Próximo spell +50% dano fogo.",
@@ -1703,7 +1516,7 @@
       "RowName": "Overcharge",
       "PhenomenonID": "UTIL_Overcharge",
       "DisplayName": "Sobrecarga Arcana",
-      "Priority": 10,
+      "Priority": 15,
       "RequiredTier": "Default",
       "RequiredElements": "Aether, Lightning",
       "Gameplay": "Reduz CD próximos 2 spells 50%.",
@@ -1713,7 +1526,7 @@
       "RowName": "TrueVision",
       "PhenomenonID": "UTIL_TrueVision",
       "DisplayName": "Visão Verdadeira",
-      "Priority": 10,
+      "Priority": 16,
       "RequiredTier": "Default",
       "RequiredElements": "Aether, Reality",
       "Gameplay": "Revela inimigos invisíveis.",
@@ -1723,7 +1536,7 @@
       "RowName": "Blink",
       "PhenomenonID": "UTIL_Blink",
       "DisplayName": "Teletransporte",
-      "Priority": 20,
+      "Priority": 21,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Aether, Wind, Lightning",
       "Gameplay": "Teleporta 15m. Afterimage 1s.",
@@ -1733,7 +1546,7 @@
       "RowName": "Drain",
       "PhenomenonID": "UTIL_Drain",
       "DisplayName": "Sifão Arcano",
-      "Priority": 20,
+      "Priority": 22,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Aether, Water, Reality",
       "Gameplay": "Drena mana inimigos → caster.",
@@ -1743,7 +1556,7 @@
       "RowName": "Rally",
       "PhenomenonID": "UTIL_Rally",
       "DisplayName": "Grito de Guerra",
-      "Priority": 20,
+      "Priority": 23,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Aether, Fire, Wind",
       "Gameplay": "AoE: +25% dano, +15% move.",
@@ -1753,7 +1566,7 @@
       "RowName": "Tremorsense",
       "PhenomenonID": "UTIL_Tremorsense",
       "DisplayName": "Sentido Sísmico",
-      "Priority": 20,
+      "Priority": 24,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Aether, Earth, Water",
       "Gameplay": "Marca todos inimigos. Wallhack 10s.",
@@ -1763,7 +1576,7 @@
       "RowName": "Weaken",
       "PhenomenonID": "UTIL_Weaken",
       "DisplayName": "Maldição",
-      "Priority": 20,
+      "Priority": 25,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Aether, Reality, Earth",
       "Gameplay": "Debuff: reduz dano e defense.",
@@ -1773,7 +1586,7 @@
       "RowName": "Dispel",
       "PhenomenonID": "UTIL_Dispel",
       "DisplayName": "Dissipar",
-      "Priority": 20,
+      "Priority": 26,
       "RequiredTier": "Ultimate",
       "RequiredElements": "Aether, Reality, Lightning",
       "Gameplay": "Remove TODOS buffs inimigos.",
@@ -1783,7 +1596,7 @@
       "RowName": "Cataclysm",
       "PhenomenonID": "UTIL_Cataclysm",
       "DisplayName": "Hecatombe",
-      "Priority": 30,
+      "Priority": 31,
       "RequiredTier": "Supreme",
       "RequiredElements": "Aether, Reality, Fire, Lightning",
       "Gameplay": "Silence + drain mana + reduz stats.",
@@ -1793,7 +1606,7 @@
       "RowName": "Nexus",
       "PhenomenonID": "UTIL_Nexus",
       "DisplayName": "Nexus Arcano",
-      "Priority": 30,
+      "Priority": 32,
       "RequiredTier": "Supreme",
       "RequiredElements": "Aether, Earth, Water, Wind",
       "Gameplay": "Zona 15s: regen HP/Mana. +30% range/dano.",
@@ -1803,7 +1616,7 @@
       "RowName": "Singularity",
       "PhenomenonID": "UTIL_Singularity",
       "DisplayName": "Singularidade",
-      "Priority": 30,
+      "Priority": 33,
       "RequiredTier": "Supreme",
       "RequiredElements": "Aether, Reality, Earth, Lightning",
       "Gameplay": "Ponto gravitacional: puxa tudo 3s.",
@@ -2724,9 +2537,7 @@
         "Barreira de Vento"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -2862,9 +2673,7 @@
         "Cura das Marés"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -2891,9 +2700,7 @@
         "Purificação",
         "Empoderamento Ígneo"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3002,9 +2809,7 @@
         "Fortificação",
         "Empoderamento Ígneo"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3058,9 +2863,7 @@
         "Campo Estático"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3087,9 +2890,7 @@
         "Empoderamento Ígneo",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3116,9 +2917,7 @@
         "Deslocamento de Fase"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3145,9 +2944,7 @@
         "Empoderamento Ígneo",
         "Visão Verdadeira"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3310,9 +3107,7 @@
         "Aceleração",
         "Purificação"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3393,9 +3188,7 @@
         "Armadura Pétrea"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3422,9 +3215,7 @@
         "Aceleração",
         "Fortificação"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3562,9 +3353,7 @@
         "Aceleração",
         "Visão Verdadeira"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3755,9 +3544,7 @@
         "Campo Estático"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3784,9 +3571,7 @@
         "Purificação",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3813,9 +3598,7 @@
         "Deslocamento de Fase"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3924,9 +3707,7 @@
         "Campo Estático"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3953,9 +3734,7 @@
         "Fortificação",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -3982,9 +3761,7 @@
         "Deslocamento de Fase"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -4570,9 +4347,7 @@
         "Teletransporte",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -4673,9 +4448,7 @@
         "Empoderamento Ígneo",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -4886,9 +4659,7 @@
         "Campo Estático"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -4921,9 +4692,7 @@
         "Empoderamento Ígneo",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -4956,9 +4725,7 @@
         "Deslocamento de Fase"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5024,10 +4791,7 @@
         "Purificação",
         "Empoderamento Ígneo"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5130,9 +4894,7 @@
         "Empoderamento Ígneo",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5233,9 +4995,7 @@
         "Fortificação",
         "Empoderamento Ígneo"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5337,10 +5097,7 @@
         "Empoderamento Ígneo",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5372,10 +5129,7 @@
         "Empoderamento Ígneo",
         "Visão Verdadeira"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5482,9 +5236,7 @@
         "Santuário"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5590,9 +5342,7 @@
         "Proteção da Tempestade"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5729,9 +5479,7 @@
         "Aceleração",
         "Purificação"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5935,10 +5683,7 @@
         "Aceleração",
         "Fortificação"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -5974,9 +5719,7 @@
         "Barreira Arcana"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6011,9 +5754,7 @@
         "Teletransporte",
         "Dissipar"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6080,9 +5821,7 @@
         "Aceleração",
         "Visão Verdadeira"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6256,9 +5995,7 @@
         "Sentido Sísmico",
         "Maldição"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6361,9 +6098,7 @@
         "Sifão Arcano",
         "Dissipar"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6395,10 +6130,7 @@
         "Purificação",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6431,9 +6163,7 @@
         "Visão Verdadeira",
         "Sifão Arcano"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6535,10 +6265,7 @@
         "Fortificação",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6571,9 +6298,7 @@
         "Visão Verdadeira",
         "Maldição"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6655,13 +6380,12 @@
         "Tufão Infernal",
         "Ragnarök",
         "Krakatoa",
-        "Leviatã"
+        "Leviatã",
+        "Apocalipse Primordial"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6709,13 +6433,12 @@
         "Fenda Elemental",
         "Cascata Entrópica",
         "Gênesis Entrópica",
-        "Devorador de Mundos"
+        "Devorador de Mundos",
+        "Erosão Cósmica"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6856,13 +6579,12 @@
         "Fenda Elemental",
         "Aniquilação",
         "Vórtice do Vazio",
-        "Zero Absoluto"
+        "Zero Absoluto",
+        "Tempestade Etérea"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6907,9 +6629,7 @@
         "Proteção da Tempestade"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -6954,9 +6674,7 @@
         "Teletransporte",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7047,9 +6765,7 @@
         "Sifão Arcano",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7138,13 +6854,12 @@
         "Cascata Entrópica",
         "Aniquilação",
         "Estrela de Nêutrons",
-        "Colapso Dimensional"
+        "Colapso Dimensional",
+        "Fragmentação Planetária"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7189,9 +6904,7 @@
         "Proteção da Tempestade"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7236,9 +6949,7 @@
         "Teletransporte",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7283,9 +6994,7 @@
         "Manto do Vazio"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7330,9 +7039,7 @@
         "Grito de Guerra",
         "Maldição"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7509,9 +7216,7 @@
         "Teletransporte",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7600,13 +7305,12 @@
         "Gênesis Entrópica",
         "Vórtice do Vazio",
         "Estrela de Nêutrons",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Maré do Caos"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7788,9 +7492,7 @@
         "Sentido Sísmico",
         "Maldição"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -7963,10 +7665,7 @@
         "Empoderamento Ígneo",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8006,9 +7705,7 @@
         "Visão Verdadeira",
         "Sifão Arcano"
       ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8101,9 +7798,7 @@
         "Hecatombe",
         "Singularidade"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8143,9 +7838,7 @@
         "Empoderamento Ígneo",
         "Sobrecarga Arcana"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8277,13 +7970,12 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Obliteração Glacial"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8329,9 +8021,7 @@
         "Santuário"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8514,9 +8204,7 @@
         "Sentido Sísmico",
         "Nexus Arcano"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8610,9 +8298,7 @@
         "Sifão Arcano",
         "Dissipar"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8654,9 +8340,7 @@
         "Sobrecarga Arcana",
         "Teletransporte"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8745,9 +8429,7 @@
         "Barreira Arcana"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8920,10 +8602,7 @@
         "Teletransporte",
         "Dissipar"
       ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -8968,9 +8647,7 @@
         "Barreira Arcana"
       ],
       "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9102,9 +8779,7 @@
         "Sentido Sísmico",
         "Maldição"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9146,9 +8821,7 @@
         "Sifão Arcano",
         "Dissipar"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9266,13 +8939,18 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Apocalipse Primordial",
+        "Erosão Cósmica",
+        "Tempestade Etérea",
+        "Fragmentação Planetária",
+        "Maré do Caos",
+        "Obliteração Glacial",
+        "Big Bang"
       ],
       "protective": [],
       "utility": [],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9321,7 +8999,8 @@
         "Tufão Infernal",
         "Ragnarök",
         "Krakatoa",
-        "Leviatã"
+        "Leviatã",
+        "Apocalipse Primordial"
       ],
       "protective": [
         "Escudo Puro",
@@ -9337,9 +9016,7 @@
         "Égide Absoluta"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9388,7 +9065,8 @@
         "Tufão Infernal",
         "Ragnarök",
         "Krakatoa",
-        "Leviatã"
+        "Leviatã",
+        "Apocalipse Primordial"
       ],
       "protective": [],
       "utility": [
@@ -9403,9 +9081,7 @@
         "Sentido Sísmico",
         "Nexus Arcano"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9454,7 +9130,8 @@
         "Fenda Elemental",
         "Cascata Entrópica",
         "Gênesis Entrópica",
-        "Devorador de Mundos"
+        "Devorador de Mundos",
+        "Erosão Cósmica"
       ],
       "protective": [
         "Escudo Puro",
@@ -9471,10 +9148,7 @@
         "Ciclo Temporal"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9523,7 +9197,8 @@
         "Fenda Elemental",
         "Cascata Entrópica",
         "Gênesis Entrópica",
-        "Devorador de Mundos"
+        "Devorador de Mundos",
+        "Erosão Cósmica"
       ],
       "protective": [],
       "utility": [
@@ -9539,9 +9214,7 @@
         "Maldição",
         "Nexus Arcano"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9647,7 +9320,8 @@
         "Fenda Elemental",
         "Aniquilação",
         "Vórtice do Vazio",
-        "Zero Absoluto"
+        "Zero Absoluto",
+        "Tempestade Etérea"
       ],
       "protective": [
         "Escudo Puro",
@@ -9664,10 +9338,7 @@
         "Ciclo Temporal"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9716,7 +9387,8 @@
         "Fenda Elemental",
         "Aniquilação",
         "Vórtice do Vazio",
-        "Zero Absoluto"
+        "Zero Absoluto",
+        "Tempestade Etérea"
       ],
       "protective": [],
       "utility": [
@@ -9732,9 +9404,7 @@
         "Dissipar",
         "Hecatombe"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9788,10 +9458,7 @@
         "Teletransporte",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9846,9 +9513,7 @@
         "Sifão Arcano",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9897,7 +9562,8 @@
         "Cascata Entrópica",
         "Aniquilação",
         "Estrela de Nêutrons",
-        "Colapso Dimensional"
+        "Colapso Dimensional",
+        "Fragmentação Planetária"
       ],
       "protective": [
         "Escudo Puro",
@@ -9913,9 +9579,7 @@
         "Fênix"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -9964,7 +9628,8 @@
         "Cascata Entrópica",
         "Aniquilação",
         "Estrela de Nêutrons",
-        "Colapso Dimensional"
+        "Colapso Dimensional",
+        "Fragmentação Planetária"
       ],
       "protective": [],
       "utility": [
@@ -9981,10 +9646,7 @@
         "Hecatombe",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10038,10 +9700,7 @@
         "Teletransporte",
         "Grito de Guerra"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10095,10 +9754,7 @@
         "Grito de Guerra",
         "Maldição"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10205,7 +9861,8 @@
         "Gênesis Entrópica",
         "Vórtice do Vazio",
         "Estrela de Nêutrons",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Maré do Caos"
       ],
       "protective": [
         "Escudo Puro",
@@ -10221,10 +9878,7 @@
         "Fênix"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10273,7 +9927,8 @@
         "Gênesis Entrópica",
         "Vórtice do Vazio",
         "Estrela de Nêutrons",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Maré do Caos"
       ],
       "protective": [],
       "utility": [
@@ -10290,10 +9945,7 @@
         "Hecatombe",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10403,9 +10055,7 @@
         "Sentido Sísmico",
         "Maldição"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10517,9 +10167,7 @@
         "Hecatombe",
         "Singularidade"
       ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10568,7 +10216,8 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Obliteração Glacial"
       ],
       "protective": [
         "Escudo Puro",
@@ -10585,9 +10234,7 @@
         "Ciclo Temporal"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10636,7 +10283,8 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Obliteração Glacial"
       ],
       "protective": [],
       "utility": [
@@ -10654,10 +10302,7 @@
         "Nexus Arcano",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10713,9 +10358,7 @@
         "Sentido Sísmico",
         "Nexus Arcano"
       ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10831,9 +10474,7 @@
         "Sifão Arcano",
         "Dissipar"
       ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10890,9 +10531,7 @@
         "Dissipar",
         "Singularidade"
       ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -10949,9 +10588,7 @@
         "Dissipar",
         "Singularidade"
       ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11027,7 +10664,14 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Apocalipse Primordial",
+        "Erosão Cósmica",
+        "Tempestade Etérea",
+        "Fragmentação Planetária",
+        "Maré do Caos",
+        "Obliteração Glacial",
+        "Big Bang"
       ],
       "protective": [
         "Escudo Puro",
@@ -11048,10 +10692,7 @@
         "Ciclo Temporal"
       ],
       "utility": [],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 3 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11127,7 +10768,14 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Apocalipse Primordial",
+        "Erosão Cósmica",
+        "Tempestade Etérea",
+        "Fragmentação Planetária",
+        "Maré do Caos",
+        "Obliteração Glacial",
+        "Big Bang"
       ],
       "protective": [],
       "utility": [
@@ -11148,10 +10796,7 @@
         "Nexus Arcano",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 3 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11201,7 +10846,8 @@
         "Tufão Infernal",
         "Ragnarök",
         "Krakatoa",
-        "Leviatã"
+        "Leviatã",
+        "Apocalipse Primordial"
       ],
       "protective": [
         "Escudo Puro",
@@ -11228,9 +10874,7 @@
         "Sentido Sísmico",
         "Nexus Arcano"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11280,7 +10924,8 @@
         "Fenda Elemental",
         "Cascata Entrópica",
         "Gênesis Entrópica",
-        "Devorador de Mundos"
+        "Devorador de Mundos",
+        "Erosão Cósmica"
       ],
       "protective": [
         "Escudo Puro",
@@ -11309,10 +10954,7 @@
         "Maldição",
         "Nexus Arcano"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11362,7 +11004,8 @@
         "Fenda Elemental",
         "Aniquilação",
         "Vórtice do Vazio",
-        "Zero Absoluto"
+        "Zero Absoluto",
+        "Tempestade Etérea"
       ],
       "protective": [
         "Escudo Puro",
@@ -11391,10 +11034,7 @@
         "Dissipar",
         "Hecatombe"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11444,7 +11084,8 @@
         "Cascata Entrópica",
         "Aniquilação",
         "Estrela de Nêutrons",
-        "Colapso Dimensional"
+        "Colapso Dimensional",
+        "Fragmentação Planetária"
       ],
       "protective": [
         "Escudo Puro",
@@ -11473,10 +11114,7 @@
         "Hecatombe",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11526,7 +11164,8 @@
         "Gênesis Entrópica",
         "Vórtice do Vazio",
         "Estrela de Nêutrons",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Maré do Caos"
       ],
       "protective": [
         "Escudo Puro",
@@ -11555,11 +11194,7 @@
         "Hecatombe",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11609,7 +11244,8 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Obliteração Glacial"
       ],
       "protective": [
         "Escudo Puro",
@@ -11640,10 +11276,7 @@
         "Nexus Arcano",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     },
     {
       "combo": [
@@ -11720,7 +11353,14 @@
         "Devorador de Mundos",
         "Zero Absoluto",
         "Colapso Dimensional",
-        "Horizonte de Eventos"
+        "Horizonte de Eventos",
+        "Apocalipse Primordial",
+        "Erosão Cósmica",
+        "Tempestade Etérea",
+        "Fragmentação Planetária",
+        "Maré do Caos",
+        "Obliteração Glacial",
+        "Big Bang"
       ],
       "protective": [
         "Escudo Puro",
@@ -11758,5073 +11398,9 @@
         "Nexus Arcano",
         "Singularidade"
       ],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 3 fenômenos empatados na maior prioridade (30.0).",
-        "Utility: 3 fenômenos empatados na maior prioridade (30.0)."
-      ]
+      "conflicts": []
     }
   ],
-  "conflicted_combinations": [
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Detonação"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Jato de Vapor"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Jato de Vapor"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Empoderamento Ígneo"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Earth",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pedregulho",
-        "Lótus de Lava"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Empoderamento Ígneo"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Descarga",
-        "Arco de Plasma"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Campo Estático"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Descarga",
-        "Arco de Plasma"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pulso do Vazio",
-        "Fogo Entrópico"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Deslocamento de Fase"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pulso do Vazio",
-        "Fogo Entrópico"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Lança de Gelo"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Earth",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pedregulho",
-        "Tempestade de Areia"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Armadura Pétrea"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Earth",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pedregulho",
-        "Tempestade de Areia"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pulso do Vazio",
-        "Tempestade do Vazio"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Visão Verdadeira"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Torrente",
-        "Descarga",
-        "Corrente Elétrica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Campo Estático"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Torrente",
-        "Descarga",
-        "Corrente Elétrica"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Pulso do Vazio",
-        "Corrosão"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Deslocamento de Fase"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Earth",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Pedregulho",
-        "Descarga",
-        "Magnetismo"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Armadura Pétrea",
-        "Campo Estático"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Earth",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Pedregulho",
-        "Descarga",
-        "Magnetismo"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Earth",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Petrificação"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Armadura Pétrea",
-        "Deslocamento de Fase"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Descarga",
-        "Detonação",
-        "Arco de Plasma",
-        "Relâmpago em Cadeia",
-        "Relâmpago Globular"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Detonação"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Empoderamento Ígneo",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Descarga",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Corrente Elétrica",
-        "Caldeirão Elétrico"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Campo Estático"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Descarga",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Corrente Elétrica",
-        "Caldeirão Elétrico"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Fogo Entrópico",
-        "Corrosão",
-        "Chuva Ácida"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Deslocamento de Fase"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Jato de Vapor"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Empoderamento Ígneo"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Earth",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pedregulho",
-        "Descarga",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Magnetismo",
-        "Surto de Magma"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Earth",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pedregulho",
-        "Lótus de Lava"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Armadura Pétrea",
-        "Casca de Magma"
-      ],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Empoderamento Ígneo"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Descarga",
-        "Arco de Plasma"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Campo Estático"
-      ],
-      "utility": [
-        "Sintonização",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pulso do Vazio",
-        "Fogo Entrópico"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Deslocamento de Fase"
-      ],
-      "utility": [
-        "Sintonização",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Pântano",
-        "Avalanche"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Armadura de Gelo",
-        "Santuário"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Corrente Elétrica",
-        "Supercélula"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Proteção da Tempestade"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Lança de Gelo"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura de Gelo"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Earth",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pedregulho",
-        "Tempestade de Areia"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Armadura Pétrea"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Descarga",
-        "Pulso do Vazio",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Fratura Temporal",
-        "Tempestade Caótica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Descarga",
-        "Pulso do Vazio",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Fratura Temporal",
-        "Tempestade Caótica"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Dissipar"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pulso do Vazio",
-        "Tempestade do Vazio"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Deslocamento de Fase",
-        "Manto do Vazio"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Visão Verdadeira"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Earth",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Abismo"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Corrente do Vazio"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Dissipar"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Torrente",
-        "Descarga",
-        "Corrente Elétrica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Campo Estático"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Pulso do Vazio",
-        "Corrosão"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Deslocamento de Fase"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Visão Verdadeira",
-        "Sifão Arcano"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Earth",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Pedregulho",
-        "Descarga",
-        "Magnetismo"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Armadura Pétrea",
-        "Campo Estático"
-      ],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Earth",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Petrificação"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Armadura Pétrea",
-        "Deslocamento de Fase"
-      ],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Visão Verdadeira",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Pântano",
-        "Corrente Elétrica",
-        "Magnetismo",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Surto de Magma",
-        "Avalanche",
-        "Supercélula",
-        "Pulso Tectônico",
-        "Areia Movediça",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Ragnarök",
-        "Krakatoa",
-        "Leviatã"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Reality"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Chuva Ácida",
-        "Forja Infernal",
-        "Avalanche",
-        "Gelo Negro",
-        "Esmagamento Gravitacional",
-        "Abismo",
-        "Tempestade Primordial",
-        "Fenda Elemental",
-        "Cascata Entrópica",
-        "Gênesis Entrópica",
-        "Devorador de Mundos"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Reality"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Antimatéria",
-        "Supercélula",
-        "Gelo Negro",
-        "Tempestade Caótica",
-        "Corrente do Vazio",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Aniquilação",
-        "Vórtice do Vazio",
-        "Zero Absoluto"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Corrente Elétrica",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Caldeirão Elétrico",
-        "Supercélula",
-        "Tufão Infernal"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Proteção da Tempestade"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Corrente Elétrica",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Caldeirão Elétrico",
-        "Supercélula",
-        "Tufão Infernal"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade do Vazio",
-        "Corrosão",
-        "Monção Flamejante",
-        "Tempestade Ilusória",
-        "Chuva Ácida",
-        "Gelo Negro",
-        "Fenda Elemental"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Reality"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Âncora Dimensional",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Estrela de Nêutrons",
-        "Colapso Dimensional"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Magnetismo",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Surto de Magma",
-        "Pulso Tectônico",
-        "Ragnarök"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Casca de Magma",
-        "Proteção da Tempestade"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Magnetismo",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Surto de Magma",
-        "Pulso Tectônico",
-        "Ragnarök"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Petrificação",
-        "Piroclasma",
-        "Tempestade Ilusória",
-        "Forja Infernal",
-        "Esmagamento Gravitacional",
-        "Cascata Entrópica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Manto do Vazio"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Petrificação",
-        "Piroclasma",
-        "Tempestade Ilusória",
-        "Forja Infernal",
-        "Esmagamento Gravitacional",
-        "Cascata Entrópica"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Grito de Guerra",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Descarga",
-        "Detonação",
-        "Arco de Plasma",
-        "Relâmpago em Cadeia",
-        "Relâmpago Globular"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Campo Estático",
-        "Proteção da Tempestade"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Horizonte de Eventos"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Gêiser",
-        "Chuva Ácida",
-        "Forja Infernal",
-        "Abismo",
-        "Gênesis Entrópica"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Descarga",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Corrente Elétrica",
-        "Caldeirão Elétrico"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Campo Estático"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0).",
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Fogo Entrópico",
-        "Corrosão",
-        "Chuva Ácida"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Deslocamento de Fase"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano"
-      ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Âncora Dimensional",
-        "Estrela de Nêutrons"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Earth",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pedregulho",
-        "Descarga",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Magnetismo",
-        "Surto de Magma"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Casca de Magma"
-      ],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (10.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Pântano",
-        "Corrente Elétrica",
-        "Magnetismo",
-        "Avalanche",
-        "Supercélula",
-        "Pulso Tectônico",
-        "Areia Movediça",
-        "Leviatã"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Santuário"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Pântano",
-        "Avalanche"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Armadura de Gelo",
-        "Santuário"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Sentido Sísmico",
-        "Nexus Arcano"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Supercélula",
-        "Gelo Negro",
-        "Tempestade Caótica",
-        "Corrente do Vazio",
-        "Zero Absoluto"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Dissipar"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Corrente Elétrica",
-        "Supercélula"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Proteção da Tempestade"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Sobrecarga Arcana",
-        "Teletransporte"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Âncora Dimensional",
-        "Colapso Dimensional"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Descarga",
-        "Pulso do Vazio",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Fratura Temporal",
-        "Tempestade Caótica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Dissipar"
-      ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Santuário",
-        "Barreira Arcana"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Earth",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Abismo"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Deslocamento de Fase",
-        "Santuário"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Corrente do Vazio"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Barreira Arcana"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Dissipar"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Pântano",
-        "Corrente Elétrica",
-        "Magnetismo",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Surto de Magma",
-        "Avalanche",
-        "Supercélula",
-        "Pulso Tectônico",
-        "Areia Movediça",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Ragnarök",
-        "Krakatoa",
-        "Leviatã"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Casca de Magma",
-        "Proteção da Tempestade",
-        "Santuário",
-        "Égide Absoluta"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Pântano",
-        "Corrente Elétrica",
-        "Magnetismo",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Surto de Magma",
-        "Avalanche",
-        "Supercélula",
-        "Pulso Tectônico",
-        "Areia Movediça",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Ragnarök",
-        "Krakatoa",
-        "Leviatã"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra",
-        "Sentido Sísmico",
-        "Nexus Arcano"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Chuva Ácida",
-        "Forja Infernal",
-        "Avalanche",
-        "Gelo Negro",
-        "Esmagamento Gravitacional",
-        "Abismo",
-        "Tempestade Primordial",
-        "Fenda Elemental",
-        "Cascata Entrópica",
-        "Gênesis Entrópica",
-        "Devorador de Mundos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Casca de Magma",
-        "Santuário",
-        "Manto do Vazio",
-        "Égide Absoluta",
-        "Ciclo Temporal"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Chuva Ácida",
-        "Forja Infernal",
-        "Avalanche",
-        "Gelo Negro",
-        "Esmagamento Gravitacional",
-        "Abismo",
-        "Tempestade Primordial",
-        "Fenda Elemental",
-        "Cascata Entrópica",
-        "Gênesis Entrópica",
-        "Devorador de Mundos"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Grito de Guerra",
-        "Sentido Sísmico",
-        "Maldição",
-        "Nexus Arcano"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Antimatéria",
-        "Supercélula",
-        "Gelo Negro",
-        "Tempestade Caótica",
-        "Corrente do Vazio",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Aniquilação",
-        "Vórtice do Vazio",
-        "Zero Absoluto"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Fênix",
-        "Ciclo Temporal"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Antimatéria",
-        "Supercélula",
-        "Gelo Negro",
-        "Tempestade Caótica",
-        "Corrente do Vazio",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Aniquilação",
-        "Vórtice do Vazio",
-        "Zero Absoluto"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Grito de Guerra",
-        "Dissipar",
-        "Hecatombe"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Corrente Elétrica",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Caldeirão Elétrico",
-        "Supercélula",
-        "Tufão Infernal"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Proteção da Tempestade"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade do Vazio",
-        "Corrosão",
-        "Monção Flamejante",
-        "Tempestade Ilusória",
-        "Chuva Ácida",
-        "Gelo Negro",
-        "Fenda Elemental"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Manto do Vazio",
-        "Ciclo Temporal"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Âncora Dimensional",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Estrela de Nêutrons",
-        "Colapso Dimensional"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Fênix"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Âncora Dimensional",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Estrela de Nêutrons",
-        "Colapso Dimensional"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Grito de Guerra",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Magnetismo",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Surto de Magma",
-        "Pulso Tectônico",
-        "Ragnarök"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Casca de Magma",
-        "Proteção da Tempestade"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Petrificação",
-        "Piroclasma",
-        "Tempestade Ilusória",
-        "Forja Infernal",
-        "Esmagamento Gravitacional",
-        "Cascata Entrópica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Manto do Vazio"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Grito de Guerra",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Santuário",
-        "Barreira Arcana",
-        "Égide Absoluta",
-        "Fênix"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Horizonte de Eventos"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Gêiser",
-        "Chuva Ácida",
-        "Forja Infernal",
-        "Abismo",
-        "Gênesis Entrópica"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Santuário",
-        "Égide Absoluta"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Âncora Dimensional",
-        "Estrela de Nêutrons"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Barreira Arcana",
-        "Fênix"
-      ],
-      "utility": [
-        "Sintonização",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Santuário",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Ciclo Temporal"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Nexus Arcano",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Pântano",
-        "Corrente Elétrica",
-        "Magnetismo",
-        "Avalanche",
-        "Supercélula",
-        "Pulso Tectônico",
-        "Areia Movediça",
-        "Leviatã"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Santuário"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Sentido Sísmico",
-        "Nexus Arcano"
-      ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Supercélula",
-        "Gelo Negro",
-        "Tempestade Caótica",
-        "Corrente do Vazio",
-        "Zero Absoluto"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Ciclo Temporal"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Dissipar"
-      ],
-      "conflicts": [
-        "Utility: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Âncora Dimensional",
-        "Colapso Dimensional"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Maldição",
-        "Dissipar",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Protective: 3 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Santuário",
-        "Barreira Arcana"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Protective: 2 fenômenos empatados na maior prioridade (20.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Casca de Magma",
-        "Proteção da Tempestade",
-        "Santuário",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Égide Absoluta",
-        "Fênix",
-        "Ciclo Temporal"
-      ],
-      "utility": [],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 3 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Grito de Guerra",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Nexus Arcano",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 3 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 0.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Pântano",
-        "Corrente Elétrica",
-        "Magnetismo",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Surto de Magma",
-        "Avalanche",
-        "Supercélula",
-        "Pulso Tectônico",
-        "Areia Movediça",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Ragnarök",
-        "Krakatoa",
-        "Leviatã"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Armadura de Gelo",
-        "Casca de Magma",
-        "Proteção da Tempestade",
-        "Santuário",
-        "Égide Absoluta"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Teletransporte",
-        "Grito de Guerra",
-        "Sentido Sísmico",
-        "Nexus Arcano"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 0.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrosão",
-        "Petrificação",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Chuva Ácida",
-        "Forja Infernal",
-        "Avalanche",
-        "Gelo Negro",
-        "Esmagamento Gravitacional",
-        "Abismo",
-        "Tempestade Primordial",
-        "Fenda Elemental",
-        "Cascata Entrópica",
-        "Gênesis Entrópica",
-        "Devorador de Mundos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Casca de Magma",
-        "Santuário",
-        "Manto do Vazio",
-        "Égide Absoluta",
-        "Ciclo Temporal"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Grito de Guerra",
-        "Sentido Sísmico",
-        "Maldição",
-        "Nexus Arcano"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 0.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Fratura Temporal",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Antimatéria",
-        "Supercélula",
-        "Gelo Negro",
-        "Tempestade Caótica",
-        "Corrente do Vazio",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Aniquilação",
-        "Vórtice do Vazio",
-        "Zero Absoluto"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Fênix",
-        "Ciclo Temporal"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Grito de Guerra",
-        "Dissipar",
-        "Hecatombe"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 0.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Âncora Dimensional",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Estrela de Nêutrons",
-        "Colapso Dimensional"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Proteção da Tempestade",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Fênix"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Grito de Guerra",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 0.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Casca de Magma",
-        "Santuário",
-        "Barreira Arcana",
-        "Égide Absoluta",
-        "Fênix"
-      ],
-      "utility": [
-        "Sintonização",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 2 fenômenos empatados na maior prioridade (30.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 0.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Proteção da Tempestade",
-        "Santuário",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Ciclo Temporal"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Nexus Arcano",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 5 fenômenos empatados na maior prioridade (50.0).",
-        "Utility: 2 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    },
-    {
-      "combo": [
-        "Fire",
-        "Wind",
-        "Water",
-        "Earth",
-        "Lightning",
-        "Reality",
-        "Protection",
-        "Aether"
-      ],
-      "totals": {
-        "Heat": 1.0,
-        "Pressure": 1.0,
-        "Humidity": 1.0,
-        "Density": 1.0,
-        "Conductivity": 1.0,
-        "Distortion": 1.0
-      },
-      "offensive": [
-        "Projétil Ígneo",
-        "Rajada Cortante",
-        "Torrente",
-        "Pedregulho",
-        "Descarga",
-        "Pulso do Vazio",
-        "Detonação",
-        "Jato de Vapor",
-        "Lótus de Lava",
-        "Arco de Plasma",
-        "Fogo Entrópico",
-        "Lança de Gelo",
-        "Tempestade de Areia",
-        "Relâmpago em Cadeia",
-        "Tempestade do Vazio",
-        "Pântano",
-        "Corrente Elétrica",
-        "Corrosão",
-        "Magnetismo",
-        "Petrificação",
-        "Fratura Temporal",
-        "Piroclasma",
-        "Monção Flamejante",
-        "Relâmpago Globular",
-        "Tempestade Ilusória",
-        "Gêiser",
-        "Caldeirão Elétrico",
-        "Chuva Ácida",
-        "Surto de Magma",
-        "Forja Infernal",
-        "Antimatéria",
-        "Avalanche",
-        "Supercélula",
-        "Gelo Negro",
-        "Pulso Tectônico",
-        "Esmagamento Gravitacional",
-        "Tempestade Caótica",
-        "Areia Movediça",
-        "Abismo",
-        "Corrente do Vazio",
-        "Âncora Dimensional",
-        "Tempestade Primordial",
-        "Tufão Infernal",
-        "Fenda Elemental",
-        "Ragnarök",
-        "Cascata Entrópica",
-        "Aniquilação",
-        "Krakatoa",
-        "Gênesis Entrópica",
-        "Vórtice do Vazio",
-        "Estrela de Nêutrons",
-        "Leviatã",
-        "Devorador de Mundos",
-        "Zero Absoluto",
-        "Colapso Dimensional",
-        "Horizonte de Eventos"
-      ],
-      "protective": [
-        "Escudo Puro",
-        "Escudo Flamejante",
-        "Barreira de Vento",
-        "Cura das Marés",
-        "Armadura Pétrea",
-        "Campo Estático",
-        "Deslocamento de Fase",
-        "Armadura de Gelo",
-        "Casca de Magma",
-        "Proteção da Tempestade",
-        "Santuário",
-        "Manto do Vazio",
-        "Barreira Arcana",
-        "Égide Absoluta",
-        "Fênix",
-        "Ciclo Temporal"
-      ],
-      "utility": [
-        "Sintonização",
-        "Aceleração",
-        "Purificação",
-        "Fortificação",
-        "Empoderamento Ígneo",
-        "Sobrecarga Arcana",
-        "Visão Verdadeira",
-        "Teletransporte",
-        "Sifão Arcano",
-        "Grito de Guerra",
-        "Sentido Sísmico",
-        "Maldição",
-        "Dissipar",
-        "Hecatombe",
-        "Nexus Arcano",
-        "Singularidade"
-      ],
-      "conflicts": [
-        "Offensive: 15 fenômenos empatados na maior prioridade (50.0).",
-        "Protective: 3 fenômenos empatados na maior prioridade (30.0).",
-        "Utility: 3 fenômenos empatados na maior prioridade (30.0)."
-      ]
-    }
-  ],
-  "unreachable_phenomena": [
-    {
-      "id": "OFF_Inferno",
-      "name": "Inferno",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Cyclone",
-      "name": "Ciclone",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Deluge",
-      "name": "Dilúvio",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Quake",
-      "name": "Tremor",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_StormBolt",
-      "name": "Trovão",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Rift",
-      "name": "Fissura Dimensional",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Inferno_Ult",
-      "name": "Inferno Supremo",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Volcano_Ult",
-      "name": "Vulcão",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Pyroclasm_Ult",
-      "name": "Cataclisma",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Plasma_Ult",
-      "name": "Coluna de Plasma",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_ChainLightning_Ult",
-      "name": "Tempestade Arcana",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Blizzard_Ult",
-      "name": "Era Glacial",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Petrify_Ult",
-      "name": "Medusa",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_Supernova",
-      "name": "Supernova",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_WorldRend",
-      "name": "Ruptura do Mundo",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_NovaBorealis",
-      "name": "Aurora Devastadora",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_SolarForge",
-      "name": "Forja Solar",
-      "category": "Offensive"
-    },
-    {
-      "id": "OFF_VoidSingularity",
-      "name": "Singularidade Void",
-      "category": "Offensive"
-    }
-  ]
+  "conflicted_combinations": [],
+  "unreachable_phenomena": []
 }
