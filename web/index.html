@@ -7,51 +7,153 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Spell Validator</h1>
-    <p>Validação de combinações de feitiços e conflitos com base no Excel.</p>
-  </header>
-
-  <section id="summary" class="cards"></section>
-
-  <section class="panel">
-    <h2>Combinações</h2>
-    <div class="filters">
-      <label><input type="checkbox" id="onlyConflicts" /> Mostrar apenas combinações com conflito</label>
-      <input id="searchCombo" placeholder="Buscar por elemento (ex: Fire, Water, Aether)" />
+  <!-- Sidebar Navigation -->
+  <aside id="sidebar">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/>
+        <line x1="12" y1="2" x2="12" y2="22"/>
+        <line x1="2" y1="8.5" x2="22" y2="8.5"/>
+        <line x1="2" y1="15.5" x2="22" y2="15.5"/>
+      </svg>
+      <span>Spell Validator</span>
     </div>
-    <div class="table-wrap">
-      <table id="comboTable">
-        <thead>
-          <tr>
-            <th>Combinação</th>
-            <th>Ofensivos Ativos</th>
-            <th>Protetivos Ativos</th>
-            <th>Utilitários Ativos</th>
-            <th>Conflitos</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </section>
+    <nav>
+      <button class="nav-btn active" data-view="overview">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        <span>Vis&atilde;o Geral</span>
+      </button>
+      <button class="nav-btn" data-view="visualizer">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20M2 12h20"/></svg>
+        <span>Visualizador 3D</span>
+      </button>
+      <button class="nav-btn" data-view="combos">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <span>Combina&ccedil;&otilde;es</span>
+      </button>
+      <button class="nav-btn" data-view="data">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        <span>Dados</span>
+      </button>
+    </nav>
+  </aside>
 
-  <section class="panel">
-    <h2>Fenômenos inacessíveis</h2>
-    <ul id="unreachable"></ul>
-  </section>
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Overview View -->
+    <section id="view-overview" class="view active">
+      <div class="view-header">
+        <h1>Vis&atilde;o Geral</h1>
+        <p class="subtitle">Resumo da valida&ccedil;&atilde;o de feitiços</p>
+      </div>
+      <div id="summary" class="cards"></div>
 
-  <section class="panel">
-    <h2>Dados do Excel</h2>
-    <div class="tabs">
-      <button data-tab="elements">Elementos</button>
-      <button data-tab="offensive">Offensive</button>
-      <button data-tab="protective">Protective</button>
-      <button data-tab="utility">Utility</button>
-    </div>
-    <div id="dataset"></div>
-  </section>
+      <div class="grid-2">
+        <div class="panel">
+          <h2>Status dos Fenômenos</h2>
+          <ul id="unreachable"></ul>
+        </div>
+        <div class="panel">
+          <h2>Distribui&ccedil;&atilde;o por Tier</h2>
+          <div id="tierChart"></div>
+        </div>
+      </div>
 
+      <div class="panel">
+        <h2>Elementos</h2>
+        <div id="elementGrid" class="element-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3D Visualizer View -->
+    <section id="view-visualizer" class="view">
+      <div class="view-header">
+        <h1>Visualizador 3D</h1>
+        <p class="subtitle">Selecione elementos para ver o feitiço resultante</p>
+      </div>
+      <div class="vis-layout">
+        <div class="vis-sidebar">
+          <h3>Elementos</h3>
+          <div id="elementPicker" class="element-picker"></div>
+          <div id="spellResult" class="spell-result"></div>
+        </div>
+        <div class="vis-canvas-wrap">
+          <canvas id="spellCanvas"></canvas>
+          <div id="canvasOverlay" class="canvas-overlay">
+            <span>Selecione elementos para visualizar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combinations View -->
+    <section id="view-combos" class="view">
+      <div class="view-header">
+        <h1>Combina&ccedil;&otilde;es</h1>
+        <p class="subtitle">Todas as <span id="comboCount">255</span> combina&ccedil;&otilde;es poss&iacute;veis</p>
+      </div>
+      <div class="filters">
+        <div class="filter-group">
+          <label class="toggle">
+            <input type="checkbox" id="onlyConflicts" />
+            <span class="toggle-slider"></span>
+            <span>Apenas conflitos</span>
+          </label>
+        </div>
+        <div class="filter-group">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input id="searchCombo" placeholder="Buscar elementos..." />
+          </div>
+        </div>
+        <div class="filter-group">
+          <select id="filterSize">
+            <option value="">Todos os tamanhos</option>
+            <option value="1">1 elemento</option>
+            <option value="2">2 elementos</option>
+            <option value="3">3 elementos</option>
+            <option value="4">4 elementos</option>
+            <option value="5">5 elementos</option>
+            <option value="6">6 elementos</option>
+            <option value="7">7 elementos</option>
+            <option value="8">8 elementos</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrap" id="comboTableWrap">
+        <table id="comboTable">
+          <thead>
+            <tr>
+              <th>Combina&ccedil;&atilde;o</th>
+              <th>Ofensivo</th>
+              <th>Protetivo</th>
+              <th>Utilit&aacute;rio</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="pagination" class="pagination"></div>
+    </section>
+
+    <!-- Data View -->
+    <section id="view-data" class="view">
+      <div class="view-header">
+        <h1>Dados do Excel</h1>
+        <p class="subtitle">Dados brutos das planilhas</p>
+      </div>
+      <div class="tabs" id="dataTabs">
+        <button class="tab-btn active" data-tab="elements">Elementos</button>
+        <button class="tab-btn" data-tab="offensive">Ofensivos</button>
+        <button class="tab-btn" data-tab="protective">Protetivos</button>
+        <button class="tab-btn" data-tab="utility">Utilit&aacute;rios</button>
+      </div>
+      <div class="table-wrap" id="dataset"></div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
