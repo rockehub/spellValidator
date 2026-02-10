@@ -298,6 +298,52 @@ select {
 }
 select:focus { border-color: var(--accent); }
 
+.action-btn {
+  border: 1px solid var(--accent);
+  background: var(--accent-glow);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.selected-count {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.spell-create-panel .create-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.spell-create-panel input,
+.spell-create-panel select {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  padding: 8px 10px;
+}
+
+.create-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.msg {
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  font-size: 0.84rem;
+}
+
+.msg.ok { background: #6bcb7718; color: var(--ok); }
+.msg.warn { background: #ffd93d18; color: #ffd93d; }
+.msg.error { background: #ff525218; color: var(--conflict); }
+
 /* ===== Tables ===== */
 .table-wrap { overflow: auto; max-height: 560px; border-radius: var(--radius-sm); }
 
