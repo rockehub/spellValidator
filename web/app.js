@@ -15,6 +15,12 @@ const ELEM = {
 let report = null;
 let currentPage = 1;
 const PAGE_SIZE = 30;
+const selectedComboKeys = new Set();
+const STAT_FIELDS = [
+  'Heat', 'Pressure', 'Humidity', 'Density', 'Conductivity',
+  'Distortion', 'Protection', 'Volatility', 'Stability', 'Essence', 'Damage',
+];
+const REQ_FIELDS = ['Heat', 'Pressure', 'Humidity', 'Density', 'Conductivity', 'Distortion'];
 
 // ============================================================
 // Navigation
@@ -140,6 +146,14 @@ function getFilteredCombos() {
   });
 }
 
+function comboKey(combo) {
+  return [...combo].sort().join('|');
+}
+
+function countSelectedVisibleCombos(rows) {
+  return rows.filter(c => selectedComboKeys.has(comboKey(c.combo))).length;
+}
+
 function renderCombos() {
   const filtered = getFilteredCombos();
   document.getElementById('comboCount').textContent = filtered.length;
@@ -152,6 +166,8 @@ function renderCombos() {
 
   const tbody = document.querySelector('#comboTable tbody');
   tbody.innerHTML = pageRows.map(c => {
+    const key = comboKey(c.combo);
+    const checked = selectedComboKeys.has(key) ? 'checked' : '';
     const pills = c.combo.map(pill).join(' ');
     const off = c.offensive.length
       ? `<div class="spell-list">${c.offensive.map((s, i) => `<span class="spell-name${i === c.offensive.length - 1 ? ' spell-winner' : ''}">${s}</span>`).join('')}</div>`
@@ -165,10 +181,188 @@ function renderCombos() {
     const status = c.conflicts.length
       ? `<span class="badge conflict">${c.conflicts.length} conflito${c.conflicts.length > 1 ? 's' : ''}</span>`
       : '<span class="badge ok">OK</span>';
-    return `<tr><td>${pills}</td><td>${off}</td><td>${prot}</td><td>${util}</td><td>${status}</td></tr>`;
+    return `<tr>
+      <td><input type="checkbox" class="select-combo" data-combo-key="${key}" ${checked} /></td>
+      <td>${pills}</td><td>${off}</td><td>${prot}</td><td>${util}</td><td>${status}</td>
+    </tr>`;
   }).join('');
 
+  tbody.querySelectorAll('.select-combo').forEach(input => {
+    input.addEventListener('change', () => {
+      const key = input.dataset.comboKey;
+      if (input.checked) {
+        selectedComboKeys.add(key);
+      } else {
+        selectedComboKeys.delete(key);
+      }
+      refreshSelectionUI(filtered, pageRows);
+    });
+  });
+
+  refreshSelectionUI(filtered, pageRows);
+
   renderPagination(totalPages);
+}
+
+function refreshSelectionUI(filteredRows, visibleRows) {
+  const selectedCount = selectedComboKeys.size;
+  document.getElementById('selectedCount').textContent = `${selectedCount} combinações selecionadas`;
+
+  const selectAll = document.getElementById('selectAllVisibleCombos');
+  const visibleSelected = countSelectedVisibleCombos(visibleRows);
+  if (!visibleRows.length) {
+    selectAll.checked = false;
+    selectAll.indeterminate = false;
+    return;
+  }
+  selectAll.checked = visibleSelected === visibleRows.length;
+  selectAll.indeterminate = visibleSelected > 0 && visibleSelected < visibleRows.length;
+}
+
+function parseRequiredElements(value) {
+  if (!value) return [];
+  return value.split(',').map(v => v.trim()).filter(Boolean);
+}
+
+function toNumber(value, fallback = 0) {
+  if (value === '' || value === null || value === undefined) return fallback;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : fallback;
+}
+
+function buildExportSpell(spell, category) {
+  const requiredElements = parseRequiredElements(spell.RequiredElements);
+  const requiredStats = {};
+  REQ_FIELDS.forEach(field => {
+    requiredStats[field] = toNumber(spell[`Req_${field}`], 0);
+  });
+
+  const rowName = spell.RowName || spell.Name || spell.PhenomenonID;
+  return {
+    Name: rowName,
+    PhenomenonID: spell.PhenomenonID,
+    DisplayName: spell.DisplayName,
+    Priority: toNumber(spell.Priority, 0),
+    Category: category,
+    RequiredStats: {
+      BaseStats: Object.fromEntries(STAT_FIELDS.map(f => [f, requiredStats[f] || 0])),
+      Cost: 0,
+      CritChanceMod: 0,
+      CritMultiplierMod: 0,
+      CastingTimeMod: 0,
+      RangeMod: 0,
+      CooldownMod: 0,
+      DurationMod: 0,
+    },
+    RequiredElements: requiredElements,
+    RequiredTier: spell.RequiredTier || 'Default',
+    DeliveryShape: spell.DeliveryShape || 'None',
+    CustomAbilityClass: 'None',
+    StatModifiers: Object.fromEntries(STAT_FIELDS.map(f => [f, 0])),
+    CritChanceModifier: 0,
+    RangeModifier: 0,
+    Icon: 'None',
+    DeliveryVFX: spell['VFX Sugestão'] || 'None',
+    ChargeVFX: 'None',
+  };
+}
+
+function exportSelectedSpells() {
+  const category = document.getElementById('exportCategory').value;
+  const selectedCombos = report.combinations.filter(c => selectedComboKeys.has(comboKey(c.combo)));
+  if (!selectedCombos.length) {
+    alert('Selecione ao menos uma combinação para exportar.');
+    return;
+  }
+
+  const categoryMap = {
+    offensive: { key: 'offensive', reportCategory: 'Offensive' },
+    protective: { key: 'protective', reportCategory: 'Protective' },
+    utility: { key: 'utility', reportCategory: 'Utility' },
+  };
+  const cat = categoryMap[category];
+  const names = new Set();
+  selectedCombos.forEach(combo => combo[cat.key].forEach(name => names.add(name)));
+  if (!names.size) {
+    alert(`As combinações selecionadas não possuem spells ${cat.reportCategory}.`);
+    return;
+  }
+
+  const dataset = report[cat.key] || [];
+  const exported = dataset
+    .filter(spell => names.has(spell.DisplayName))
+    .map(spell => buildExportSpell(spell, cat.reportCategory));
+
+  const blob = new Blob([JSON.stringify(exported, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `spells_${category}_export.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function findSpellConflicts(newSpell, dataset) {
+  const issues = [];
+  const normalizedName = newSpell.RowName.trim().toLowerCase();
+  const normalizedPid = newSpell.PhenomenonID.trim().toLowerCase();
+  const normalizedDisplay = newSpell.DisplayName.trim().toLowerCase();
+
+  dataset.forEach(existing => {
+    const sameName = (existing.RowName || '').trim().toLowerCase() === normalizedName;
+    const samePid = (existing.PhenomenonID || '').trim().toLowerCase() === normalizedPid;
+    const sameDisplay = (existing.DisplayName || '').trim().toLowerCase() === normalizedDisplay;
+    if (sameName) issues.push(`Conflito: RowName já existe (${existing.RowName}).`);
+    if (samePid) issues.push(`Conflito: PhenomenonID já existe (${existing.PhenomenonID}).`);
+    if (sameDisplay) issues.push(`Conflito: DisplayName já existe (${existing.DisplayName}).`);
+
+    const simName = (existing.RowName || '').toLowerCase();
+    if (!sameName && (simName.includes(normalizedName) || normalizedName.includes(simName)) && simName) {
+      issues.push(`Semelhança: nome parecido com ${existing.RowName}.`);
+    }
+  });
+
+  return [...new Set(issues)];
+}
+
+function createSpellFromForm(event) {
+  event.preventDefault();
+  const messagesEl = document.getElementById('createSpellMessages');
+  messagesEl.innerHTML = '';
+
+  const category = document.getElementById('newSpellCategory').value;
+  const spell = {
+    RowName: document.getElementById('newSpellName').value.trim(),
+    PhenomenonID: document.getElementById('newSpellPhenomenonId').value.trim(),
+    DisplayName: document.getElementById('newSpellDisplayName').value.trim(),
+    Priority: toNumber(document.getElementById('newSpellPriority').value, 0),
+    RequiredTier: 'Default',
+    RequiredElements: document.getElementById('newSpellRequiredElements').value.trim(),
+    Req_Heat: toNumber(document.getElementById('newSpellReqHeat').value, 0),
+    Req_Pressure: toNumber(document.getElementById('newSpellReqPressure').value, 0),
+    Req_Humidity: toNumber(document.getElementById('newSpellReqHumidity').value, 0),
+    Req_Density: toNumber(document.getElementById('newSpellReqDensity').value, 0),
+    Req_Conductivity: toNumber(document.getElementById('newSpellReqConductivity').value, 0),
+    Req_Distortion: toNumber(document.getElementById('newSpellReqDistortion').value, 0),
+  };
+
+  const dataset = report[category];
+  const issues = findSpellConflicts(spell, dataset);
+
+  const hasHardConflict = issues.some(issue => issue.startsWith('Conflito:'));
+  if (issues.length) {
+    messagesEl.innerHTML = issues.map(i => `<div class="msg ${i.startsWith('Conflito:') ? 'error' : 'warn'}">${i}</div>`).join('');
+  }
+
+  if (hasHardConflict) {
+    messagesEl.innerHTML += '<div class="msg error">Feitiço não adicionado por conflito.</div>';
+    return;
+  }
+
+  dataset.push(spell);
+  messagesEl.innerHTML += '<div class="msg ok">Feitiço adicionado na sessão com sucesso.</div>';
+  renderDataset();
+  event.target.reset();
 }
 
 function renderPagination(totalPages) {
@@ -533,6 +727,22 @@ async function init() {
   document.getElementById('onlyConflicts').addEventListener('change', () => { currentPage = 1; renderCombos(); });
   document.getElementById('searchCombo').addEventListener('input', () => { currentPage = 1; renderCombos(); });
   document.getElementById('filterSize').addEventListener('change', () => { currentPage = 1; renderCombos(); });
+  document.getElementById('exportSelectedBtn').addEventListener('click', exportSelectedSpells);
+  document.getElementById('createSpellForm').addEventListener('submit', createSpellFromForm);
+  document.getElementById('selectAllVisibleCombos').addEventListener('change', event => {
+    const filtered = getFilteredCombos();
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const pageRows = filtered.slice(start, start + PAGE_SIZE);
+    pageRows.forEach(c => {
+      const key = comboKey(c.combo);
+      if (event.target.checked) {
+        selectedComboKeys.add(key);
+      } else {
+        selectedComboKeys.delete(key);
+      }
+    });
+    renderCombos();
+  });
 
   // Data tabs
   document.querySelectorAll('#dataTabs .tab-btn').forEach(btn => {

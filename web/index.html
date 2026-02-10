@@ -119,11 +119,51 @@
             <option value="8">8 elementos</option>
           </select>
         </div>
+        <div class="filter-group">
+          <select id="exportCategory">
+            <option value="offensive">Exportar Ofensivos</option>
+            <option value="protective">Exportar Protetivos</option>
+            <option value="utility">Exportar Utilitários</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <button id="exportSelectedBtn" class="action-btn">Exportar selecionados</button>
+        </div>
+        <div class="filter-group">
+          <span id="selectedCount" class="selected-count">0 combinações selecionadas</span>
+        </div>
       </div>
+
+      <div class="panel spell-create-panel">
+        <h2>Criar novo feitiço</h2>
+        <p class="subtitle">Validação de conflitos e semelhanças antes de adicionar na sessão.</p>
+        <form id="createSpellForm" class="create-form">
+          <select id="newSpellCategory" required>
+            <option value="offensive">Offensive</option>
+            <option value="protective">Protective</option>
+            <option value="utility">Utility</option>
+          </select>
+          <input id="newSpellName" placeholder="RowName (Name)" required />
+          <input id="newSpellPhenomenonId" placeholder="PhenomenonID" required />
+          <input id="newSpellDisplayName" placeholder="DisplayName" required />
+          <input id="newSpellPriority" type="number" placeholder="Priority" value="10" required />
+          <input id="newSpellRequiredElements" placeholder="RequiredElements (ex: Fire,Water)" />
+          <input id="newSpellReqHeat" type="number" step="any" placeholder="Req_Heat" />
+          <input id="newSpellReqPressure" type="number" step="any" placeholder="Req_Pressure" />
+          <input id="newSpellReqHumidity" type="number" step="any" placeholder="Req_Humidity" />
+          <input id="newSpellReqDensity" type="number" step="any" placeholder="Req_Density" />
+          <input id="newSpellReqConductivity" type="number" step="any" placeholder="Req_Conductivity" />
+          <input id="newSpellReqDistortion" type="number" step="any" placeholder="Req_Distortion" />
+          <button type="submit" class="action-btn">Validar e adicionar</button>
+        </form>
+        <div id="createSpellMessages" class="create-messages"></div>
+      </div>
+
       <div class="table-wrap" id="comboTableWrap">
         <table id="comboTable">
           <thead>
             <tr>
+              <th><input type="checkbox" id="selectAllVisibleCombos" title="Selecionar página" /></th>
               <th>Combina&ccedil;&atilde;o</th>
               <th>Ofensivo</th>
               <th>Protetivo</th>
